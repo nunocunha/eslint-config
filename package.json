@@ -1,0 +1,39 @@
+{
+  "name": "@nunocunha/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint configuration for projects started by Nuno Cunha",
+  "author": "Nuno Cunha",
+  "license": "MIT",
+  "homepage": "https://github.com/nunocunha/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunocunha/eslint-config.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "deploy": "npm publish ./"
+  },
+  "devDependencies": {
+    "@angular-eslint/eslint-plugin": "16.0.3",
+    "@angular-eslint/eslint-plugin-template": "16.0.3",
+    "@angular-eslint/template-parser": "16.0.3",
+    "@typescript-eslint/eslint-plugin": "5.59.8",
+    "@typescript-eslint/parser": "5.59.8",
+    "eslint": "8.42.0",
+    "eslint-plugin-ban": "1.6.0",
+    "eslint-plugin-import": "2.27.5"
+  },
+  "peerDependencies": {
+    "@angular-eslint/eslint-plugin": "16.0.3",
+    "@angular-eslint/eslint-plugin-template": "16.0.3",
+    "@angular-eslint/template-parser": "16.0.3",
+    "@typescript-eslint/eslint-plugin": "5.59.8",
+    "@typescript-eslint/parser": "5.59.8",
+    "eslint": "8.42.0",
+    "eslint-plugin-ban": "1.6.0",
+    "eslint-plugin-import": "2.27.5"
+  }
+}
