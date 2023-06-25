@@ -55,16 +55,6 @@ module.exports = {
         '*.ts',
       ],
       'parser': '@typescript-eslint/parser',
-      'parserOptions': {
-        'project': [
-          'tsconfig.json',
-          'tsconfig.app.json',
-          'tsconfig.base.json',
-          'tsconfig.e2e.json',
-          'tsconfig.spec.json',
-        ],
-        'createDefaultProgram': true,
-      },
       'plugins': [
         '@typescript-eslint',
       ],
@@ -108,12 +98,6 @@ module.exports = {
       'files': [
         '*.component.ts',
       ],
-      'parserOptions': {
-        'project': [
-          'tsconfig.app.json',
-        ],
-        'createDefaultProgram': true,
-      },
       'extends': [
         'plugin:@angular-eslint/recommended',
         'plugin:@angular-eslint/template/process-inline-templates',
