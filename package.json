@@ -9,9 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/nunocunha/eslint-config.git"
   },
-  "main": "index.js",
+  "main": ".eslintrc.js",
   "files": [
-    "index.js"
+    ".eslintrc.js"
   ],
   "scripts": {
     "test": "eslint ./test-eslint",
