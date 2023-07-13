@@ -7,7 +7,7 @@ const baseConfig: Partial<Cypress.ResolvedConfigOptions> = {
     // implement node event listeners here
     return {
       ...config,
-      browsers: config.browsers.filter((browser) => browser.family === 'chromium' && browser.name === 'electron'),
+      browsers: config.browsers.filter((browser) => browser.family === `chromium` && browser.name === `electron`),
     };
   },
 };
@@ -15,14 +15,14 @@ const baseConfig: Partial<Cypress.ResolvedConfigOptions> = {
 export default defineConfig({
   e2e: {
     ...baseConfig,
-    specPattern: `cypress/tests/${process.env['CYPRESS_SPEC_FOLDER'] ?? ''}/**/*.spec.ts`,
+    specPattern: `cypress/tests/${process.env[`CYPRESS_SPEC_FOLDER`] ?? ``}/**/*.spec.ts`,
   },
   component: {
     ...baseConfig,
-    specPattern: 'cypress/tests/component/**/*.spec.ts',
+    specPattern: `cypress/tests/component/**/*.spec.ts`,
     devServer: {
-      framework: 'angular',
-      bundler: 'webpack',
+      framework: `angular`,
+      bundler: `webpack`,
     },
   },
   chromeWebSecurity: false,

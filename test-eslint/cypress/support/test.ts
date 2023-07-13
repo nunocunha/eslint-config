@@ -1,1 +1,1 @@
-console.log('Cypress');
+console.log(`Cypress`);
