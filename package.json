@@ -14,6 +14,8 @@
     "index.js"
   ],
   "scripts": {
+    "test": "eslint ./test-eslint",
+    "fix": "eslint ./test-eslint --fix",
     "deploy": "npm publish ./"
   },
   "peerDependencies": {
