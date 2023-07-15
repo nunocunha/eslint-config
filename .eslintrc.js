@@ -48,6 +48,7 @@ module.exports = {
           `error`,
           {items: 1},
         ],
+        'import/no-self-import': `error`,
         'import/no-unresolved': `off`,
         'import/order': [
           `error`,
@@ -56,7 +57,6 @@ module.exports = {
             'newlines-between': `always`,
           },
         ],
-        'import/no-self-import': `error`,
         indent: [
           `error`,
           2,
@@ -91,10 +91,6 @@ module.exports = {
           },
         ],
         'no-sequences': `error`,
-        "object-curly-spacing": [
-          `error`,
-          `never`,
-        ],
         'object-curly-newline': [
           `error`,
           {
@@ -102,19 +98,23 @@ module.exports = {
             minProperties: 2,
           },
         ],
+        'object-curly-spacing': [
+          `error`,
+          `never`,
+        ],
         'object-property-newline': `error`,
         'prefer-regex-literals': [
           `error`,
           {disallowRedundantWrapping: true},
         ],
         'prefer-template': [`error`],
-        quotes: [
-          `error`,
-          `backtick`,
-        ],
         'quote-props': [
           `error`,
           `as-needed`,
+        ],
+        quotes: [
+          `error`,
+          `backtick`,
         ],
         'sort-imports:': `off`,
         'spaced-comment': [
