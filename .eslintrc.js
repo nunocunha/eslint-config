@@ -2,8 +2,6 @@ module.exports = {
   'extends': [
     `eslint:recommended`,
     `plugin:@typescript-eslint/recommended`,
-    `plugin:import/recommended`,
-    `plugin:import/typescript`,
   ],
   'root': true,
   'overrides': [
@@ -11,6 +9,10 @@ module.exports = {
       'files': [
         `*.js`,
         `*.ts`,
+      ],
+      extends: [
+        `plugin:import/recommended`,
+        `plugin:import/typescript`,
       ],
       'plugins': [
         `import`,
@@ -54,7 +56,7 @@ module.exports = {
           },
         ],
         'import/no-self-import': `error`,
-        "indent": [
+        'indent': [
           `error`,
           2,
         ],
@@ -68,7 +70,7 @@ module.exports = {
         ],
         'newline-per-chained-call': [
           `error`,
-          {"ignoreChainWithDepth": 1},
+          {'ignoreChainWithDepth': 1},
         ],
         'no-duplicate-imports': [`error`],
         'no-multiple-empty-lines': [
@@ -98,14 +100,6 @@ module.exports = {
           `backtick`,
         ],
         'sort-imports:': `off`,
-        // 'sort-keys': [
-        //   `error`,
-        //   `asc`,
-        //   {
-        //     natural: true,
-        //     allowLineSeparatedGroups: true,
-        //   },
-        // ],
         'spaced-comment': [
           `error`,
           `always`,
