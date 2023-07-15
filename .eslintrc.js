@@ -130,12 +130,6 @@ module.exports = {
     {
       files: [`*.ts`],
       parser: `@typescript-eslint/parser`,
-      parserOptions: {
-        project: [
-          `**/tsconfig.json`,
-          `**/tsconfig.*.json`,
-        ],
-      },
       plugins: [`@typescript-eslint`],
       extends: [
         `plugin:@typescript-eslint/recommended`,
@@ -198,24 +192,6 @@ module.exports = {
             ],
             format: [`PascalCase`],
             leadingUnderscore: `forbid`,
-          },
-          {
-            selector: [
-              `accessor`,
-              `classProperty`,
-              // Do NOT enable this one, makes it impossible to use/configure external dependencies.
-              // `objectLiteralProperty`,
-              `parameter`,
-              `parameterProperty`,
-              `variable`,
-            ],
-            types: [`boolean`],
-            format: [`PascalCase`],
-            prefix: [
-              `is`,
-              `has`,
-              `can`,
-            ],
           },
           {
             selector: [`variable`],
