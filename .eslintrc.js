@@ -99,6 +99,10 @@ module.exports = {
           `error`,
           `backtick`,
         ],
+        'quote-props': [
+          `error`,
+          `as-needed`,
+        ],
         'sort-imports:': `off`,
         'spaced-comment': [
           `error`,
