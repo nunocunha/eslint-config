@@ -1,6 +1,6 @@
 {
   "name": "@nunocunha/eslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ESLint configuration for projects started by Nuno Cunha",
   "author": "Nuno Cunha",
   "license": "MIT",
