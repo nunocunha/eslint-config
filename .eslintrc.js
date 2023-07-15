@@ -192,7 +192,29 @@ module.exports = {
             ],
             format: [`PascalCase`],
             leadingUnderscore: `forbid`,
-            trailingUnderscore: `forbid`,
+          },
+          {
+            selector: [
+              `accessor`,
+              `classProperty`,
+              // Do NOT enable this one, makes it impossible to use/configure external dependencies.
+              // `objectLiteralProperty`,
+              `parameter`,
+              `parameterProperty`,
+              `variable`,
+            ],
+            types: [`boolean`],
+            format: [`PascalCase`],
+            prefix: [
+              `is`,
+              `has`,
+              `can`,
+            ],
+          },
+          {
+            selector: [`variable`],
+            modifiers: [`exported`],
+            format: [`UPPER_CASE`],
           },
         ],
         '@typescript-eslint/prefer-function-type': `error`,
