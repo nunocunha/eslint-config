@@ -1,12 +1,12 @@
 module.exports = {
-  'extends': [
+  extends: [
     `eslint:recommended`,
     `plugin:@typescript-eslint/recommended`,
   ],
-  'root': true,
-  'overrides': [
+  root: true,
+  overrides: [
     {
-      'files': [
+      files: [
         `*.js`,
         `*.ts`,
       ],
@@ -14,11 +14,11 @@ module.exports = {
         `plugin:import/recommended`,
         `plugin:import/typescript`,
       ],
-      'plugins': [
+      plugins: [
         `import`,
         `import-newlines`,
       ],
-      'rules': {
+      rules: {
         'array-bracket-newline': [
           `error`,
           {minItems: 2},
@@ -36,7 +36,7 @@ module.exports = {
           `always-multiline`,
         ],
         'eol-last': `error`,
-        'eqeqeq': [
+        eqeqeq: [
           `error`,
           `smart`,
         ],
@@ -51,34 +51,34 @@ module.exports = {
         'import/order': [
           `error`,
           {
-            'alphabetize': {'order': `asc`},
+            alphabetize: {order: `asc`},
             'newlines-between': `always`,
           },
         ],
         'import/no-self-import': `error`,
-        'indent': [
+        indent: [
           `error`,
           2,
         ],
         'key-spacing': [
           `error`,
           {
-            'beforeColon': false,
-            'afterColon': true,
-            'mode': `strict`,
+            beforeColon: false,
+            afterColon: true,
+            mode: `strict`,
           },
         ],
         'newline-per-chained-call': [
           `error`,
-          {'ignoreChainWithDepth': 1},
+          {ignoreChainWithDepth: 1},
         ],
         'no-duplicate-imports': [`error`],
         'no-multiple-empty-lines': [
           `error`,
           {
-            'max': 1,
-            'maxBOF': 0,
-            'maxEOF': 0,
+            max: 1,
+            maxBOF: 0,
+            maxEOF: 0,
           },
         ],
         'no-sequences': `error`,
@@ -92,7 +92,7 @@ module.exports = {
         'object-property-newline': `error`,
         'prefer-regex-literals': [
           `error`,
-          {'disallowRedundantWrapping': true},
+          {disallowRedundantWrapping: true},
         ],
         'prefer-template': [`error`],
         quotes: [
@@ -112,38 +112,38 @@ module.exports = {
       },
     },
     {
-      'files': [`*.js`],
-      'env': {'node': true},
+      files: [`*.js`],
+      env: {node: true},
     },
     {
-      'files': [`*.ts`],
-      'parser': `@typescript-eslint/parser`,
-      'plugins': [`@typescript-eslint`],
-      'extends': [
+      files: [`*.ts`],
+      parser: `@typescript-eslint/parser`,
+      plugins: [`@typescript-eslint`],
+      extends: [
         `plugin:@typescript-eslint/recommended`,
         `plugin:@angular-eslint/recommended`,
         `plugin:@angular-eslint/template/process-inline-templates`,
       ],
-      'rules': {
+      rules: {
         '@angular-eslint/component-selector': [
           `error`,
           {
-            'type': `element`,
-            'prefix': `app`,
-            'style': `kebab-case`,
+            type: `element`,
+            prefix: `app`,
+            style: `kebab-case`,
           },
         ],
         '@angular-eslint/directive-selector': [
           `error`,
           {
-            'type': `attribute`,
-            'prefix': `app`,
-            'style': `camelCase`,
+            type: `attribute`,
+            prefix: `app`,
+            style: `camelCase`,
           },
         ],
         '@typescript-eslint/explicit-function-return-type': [
           `error`,
-          {'allowExpressions': true},
+          {allowExpressions: true},
         ],
         '@typescript-eslint/explicit-member-accessibility': `error`,
         '@typescript-eslint/prefer-function-type': `error`,
@@ -154,143 +154,143 @@ module.exports = {
       },
     },
     {
-      'files': [`*.component.ts`],
-      'extends': [
+      files: [`*.component.ts`],
+      extends: [
         `plugin:@angular-eslint/recommended`,
         `plugin:@angular-eslint/template/process-inline-templates`,
       ],
-      'rules': {
+      rules: {
         '@angular-eslint/component-selector': [
           `error`,
           {
-            'type': [
+            type: [
               `element`,
               `attribute`,
             ],
-            'prefix': [
+            prefix: [
               `app`,
               `lib`,
             ],
-            'style': `kebab-case`,
+            style: `kebab-case`,
           },
         ],
         'no-restricted-syntax': [
           `error`,
           {
-            'selector': `MethodDefinition[kind = 'get']:not(:matches([accessibility = 'private'], [accessibility = 'protected']))`,
-            'message': `Avoid public getters in components, as they degrade Angular performance.`,
+            selector: `MethodDefinition[kind = 'get']:not(:matches([accessibility = 'private'], [accessibility = 'protected']))`,
+            message: `Avoid public getters in components, as they degrade Angular performance.`,
           },
         ],
       },
     },
     {
-      'files': [`*.spec.ts`],
-      'plugins': [`ban`],
-      'rules': {
+      files: [`*.spec.ts`],
+      plugins: [`ban`],
+      rules: {
         'ban/ban': [
           `error`,
           {
-            'name': [
+            name: [
               `describe`,
               `skip`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `describe`,
               `only`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `context`,
               `skip`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `context`,
               `only`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `it`,
               `skip`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `it`,
               `only`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `test`,
               `skip`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `test`,
               `only`,
             ],
-            'message': `Do not skip tests.`,
+            message: `Do not skip tests.`,
           },
           {
-            'name': [
+            name: [
               `*`,
               `toHaveBeenCalled`,
             ],
-            'message': `Methods/functions logic should not be tested; test outcomes instead.`,
+            message: `Methods/functions logic should not be tested; test outcomes instead.`,
           },
           {
-            'name': [
+            name: [
               `*`,
               `toHaveBeenCalledTimes`,
             ],
-            'message': `Methods/functions logic should not be tested; test outcomes instead.`,
+            message: `Methods/functions logic should not be tested; test outcomes instead.`,
           },
           {
-            'name': [
+            name: [
               `*`,
               `toHaveBeenCalledWith`,
             ],
-            'message': `Methods/functions logic should not be tested; test outcomes instead.`,
+            message: `Methods/functions logic should not be tested; test outcomes instead.`,
           },
           {
-            'name': [
+            name: [
               `*`,
               `toHaveBeenNthCalledWith`,
             ],
-            'message': `Methods/functions logic should not be tested; test outcomes instead.`,
+            message: `Methods/functions logic should not be tested; test outcomes instead.`,
           },
           {
-            'name': [
+            name: [
               `*`,
               `toHaveBeenLastCalledWith`,
             ],
-            'message': `Methods/functions logic should not be tested; test outcomes instead.`,
+            message: `Methods/functions logic should not be tested; test outcomes instead.`,
           },
         ],
       },
     },
     {
-      'files': [`*.html`],
-      'extends': [`plugin:@angular-eslint/template/recommended`],
-      'rules': {'@angular-eslint/template/no-call-expression': `error`},
+      files: [`*.html`],
+      extends: [`plugin:@angular-eslint/template/recommended`],
+      rules: {'@angular-eslint/template/no-call-expression': `error`},
     },
     {
-      'files': [`.eslintrc.js`],
-      'rules': {'sort-keys': `off`},
+      files: [`.eslintrc.js`],
+      rules: {'sort-keys': `off`},
     },
   ],
 };
