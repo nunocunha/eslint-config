@@ -189,6 +189,7 @@ module.exports = {
               `interface`,
               `enum`,
               `typeAlias`,
+              `typeParameter`,
             ],
             format: [`PascalCase`],
             leadingUnderscore: `forbid`,
