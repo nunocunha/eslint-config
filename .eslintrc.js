@@ -46,7 +46,7 @@ module.exports = {
         ],
         'import-newlines/enforce': [
           `error`,
-          {items: 2},
+          {items: 1},
         ],
         'import/order': [
           `error`,
@@ -90,6 +90,10 @@ module.exports = {
           },
         ],
         'no-sequences': `error`,
+        "object-curly-spacing": [
+          `error`,
+          `never`,
+        ],
         'object-curly-newline': [
           `error`,
           {
