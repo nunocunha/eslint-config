@@ -6,7 +6,9 @@
   "files": [
     "src/main.ts"
   ],
-  "include": [],
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": [
     "**/*.mock.ts",
     "**/*.spec.ts"

@@ -1,9 +1,9 @@
 import type {Config} from 'jest';
 import presets from 'jest-preset-angular/presets';
 
-const COVERAGE_THRESHOLD: Readonly<number> = 80;
+const coverageThreshold: Readonly<number> = 80;
 
-const jestConfig: Config = {
+export default <Config>{
   preset: `jest-preset-angular`,
   transform: {
     '^.+\\.(ts|js|mjs|html|svg)$': [
@@ -21,12 +21,10 @@ const jestConfig: Config = {
   coverageDirectory: `coverage`,
   coverageThreshold: {
     global: {
-      branches: COVERAGE_THRESHOLD,
-      functions: COVERAGE_THRESHOLD,
-      lines: COVERAGE_THRESHOLD,
-      statements: COVERAGE_THRESHOLD,
+      branches: coverageThreshold,
+      functions: coverageThreshold,
+      lines: coverageThreshold,
+      statements: coverageThreshold,
     },
   },
 };
-
-export default jestConfig;
