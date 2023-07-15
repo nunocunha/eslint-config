@@ -199,6 +199,10 @@ module.exports = {
             modifiers: [`exported`],
             format: [`UPPER_CASE`],
           },
+          {
+            selector: [`enumMember`],
+            format: [`UPPER_CASE`],
+          },
         ],
         '@typescript-eslint/prefer-function-type': `error`,
         '@typescript-eslint/semi': [
