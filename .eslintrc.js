@@ -68,6 +68,14 @@ module.exports = {
             mode: `strict`,
           },
         ],
+        'max-len': [
+          `error`,
+          {
+            code: 120,
+            tabWidth: 2,
+            ignoreUrls: true,
+          },
+        ],
         'newline-per-chained-call': [
           `error`,
           {ignoreChainWithDepth: 1},
@@ -327,7 +335,10 @@ module.exports = {
     },
     {
       files: [`.eslintrc.js`],
-      rules: {'sort-keys': `off`},
+      rules: {
+        'sort-keys': `off`,
+        'max-len': `off`,
+      },
     },
   ],
 };
