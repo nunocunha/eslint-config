@@ -146,6 +146,43 @@ module.exports = {
           {allowExpressions: true},
         ],
         '@typescript-eslint/explicit-member-accessibility': `error`,
+        '@typescript-eslint/naming-convention': [
+          `error`,
+          {
+            selector: `default`,
+            format: [`camelCase`],
+            leadingUnderscore: `forbid`,
+            trailingUnderscore: `forbid`,
+          },
+          {
+            selector: `default`,
+            modifiers: [`private`],
+            format: [`camelCase`],
+            leadingUnderscore: `allow`,
+          },
+          {
+            selector: `default`,
+            modifiers: [`requiresQuotes`],
+            format: null,
+          },
+          {
+            selector: [`classProperty`],
+            modifiers: [`static`],
+            format: [`UPPER_CASE`],
+            leadingUnderscore: `forbid`,
+          },
+          {
+            selector: [
+              `class`,
+              `interface`,
+              `enum`,
+              `typeAlias`,
+            ],
+            format: [`PascalCase`],
+            leadingUnderscore: `forbid`,
+            trailingUnderscore: `forbid`,
+          },
+        ],
         '@typescript-eslint/prefer-function-type': `error`,
         '@typescript-eslint/semi': [
           `error`,
