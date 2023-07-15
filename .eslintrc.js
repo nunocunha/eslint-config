@@ -48,6 +48,7 @@ module.exports = {
           `error`,
           {items: 1},
         ],
+        'import/no-unresolved': `off`,
         'import/order': [
           `error`,
           {
