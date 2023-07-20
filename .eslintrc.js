@@ -17,6 +17,7 @@ module.exports = {
       plugins: [
         `import`,
         `import-newlines`,
+        `decorator-position`,
       ],
       rules: {
         'array-bracket-newline': [
@@ -34,6 +35,13 @@ module.exports = {
         'comma-dangle': [
           `error`,
           `always-multiline`,
+        ],
+        'decorator-position/decorator-position': [
+          `error`,
+          {
+            methods: `above`,
+            properties: `above`,
+          },
         ],
         'eol-last': `error`,
         eqeqeq: [
