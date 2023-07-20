@@ -1,5 +1,8 @@
 import {CommonModule} from '@angular/common';
-import {Component} from '@angular/core';
+import {
+  Component,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   standalone: true,
@@ -8,6 +11,9 @@ import {Component} from '@angular/core';
   templateUrl: `./test.component.html`,
 })
 export class TestComponent {
+  @ViewChild(`id`)
+  private asd: unknown;
+
   public get x(): string {
     return `x`;
   }
