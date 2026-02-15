@@ -1,0 +1,54 @@
+{
+  "name": "@nunocunha/eslint-config",
+  "version": "21.1.0",
+  "description": "Strict ESLint configuration for TypeScript and Angular projects with Google style guide and Prettier integration",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./prettier": "./prettier.config.js",
+    "./tsconfig": "./tsconfig.json"
+  },
+  "files": [
+    "index.js",
+    "prettier.config.js",
+    "tsconfig.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "typescript",
+    "angular",
+    "google",
+    "prettier",
+    "style-guide"
+  ],
+  "author": "Nuno Cunha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunocunha/eslint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "@nunocunha:registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "@angular-eslint/eslint-plugin": "^21.1",
+    "@angular-eslint/eslint-plugin-template": "^21.1",
+    "@angular-eslint/template-parser": "^21.1",
+    "@typescript-eslint/eslint-plugin": "^8.55",
+    "@typescript-eslint/parser": "^8.55",
+    "eslint": "^9.0",
+    "eslint-config-google": "^0.14",
+    "eslint-config-prettier": "^10.1",
+    "eslint-plugin-prettier": "^5.5",
+    "prettier": "^3.8",
+    "typescript": "^5.9"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
